@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>JavaScript For Loop</h2>
+
+<p id="five"></p>
+
+<script>
+var nums = [100,220,330, 45,541,630];
+var n = "";
+var i;
+for (i =0 ; i < nums.length; i++) {
+  n += nums[i] + "<br>";
+}
+document.getElementById("five").innerHTML = n;
+
+</script>
+<h2>JavaScript for SwitchCase</h2>
+<p id="din"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("din").innerHTML = "Today is " + day;
+</script>
+
+<h2>JavaScript for If-Else</h2>
+<p id="one"></p>
+
+<script>
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("one").innerHTML = greeting;
+
+</script>
+
+<h2>JavaScript While Loop</h2>
+<p id="two"></p>
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("two").innerHTML = text;
+</script>
+<h2>JavaScript if Loop</h2>
+<p id="three"></p>
+
+<script>
+var i=67;
+if (i > 10 && i<100 ) {
+  document.getElementById("three").innerHTML = "Number is between 10 and 100";
+}
+</script>
+
+
+<h2>JavaScript Fibonacci fibonacci_series</h2>
+<p id='four'></p>
+<script>
+	var fibonacci_series = function (n) 
+{
+  if (n===1) 
+  {
+    return [0, 1];
+  } 
+  else 
+  {
+    var s = fibonacci_series(n - 1);
+    s.push(s[s.length - 1] + s[s.length - 2]);
+    return s;
+  }
+};
+document.getElementById("four").innerHTML =fibonacci_series(8);
+ console.log(fibonacci_series(8));
+</script>
+
+
+<h2>JavaScript String Methods</h2>
+<p>	The 5th, 7th and 10th words are</p>
+<p id="six"></p>
+<p id="seven">	</p>
+<p id="eight">	</p>
+<script>
+var str = "HTML is the standard markup language for Web pages, with HTML you can create your own Website.";
+var arr=str.trim().split(" ");
+var fifth = arr[4];
+var seventh = arr[6];
+var tenth=arr[9];
+document.getElementById("six").innerHTML = fifth;
+document.getElementById("seven").innerHTML = seventh;
+document.getElementById("eight").innerHTML = tenth;
+</script>
+
+<div>
+	<h2>JavaScript Error handling </h2>
+<p>Please input a number between 10 and 100:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+</div>
+
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>

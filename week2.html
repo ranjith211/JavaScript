@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Intro</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+     <script> function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message += "<ul><li><b>PHONE: </b>" + document.myForm.pnum.value + "</ul>";
+  DispWin.document.write(message);
+
+}
+</script>
+  </head>
+  <body>
+    <h1>Mozilla is cool</h1>
+    <img src="images/javascript-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+     <body>
+        <table id="table" border="2" cellspacing="0" width=40% height="auto">
+            <tr>
+                <th>Subject Name</th>
+                
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                
+                <td>86</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Sanskrit</td>
+               
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Economics</td>
+                
+                <td>85</td>
+            </tr>
+          
+        </table>
+        
+        <span id="val"></span>
+        <br> 
+        <br>  
+        <form name="myForm"  onsubmit="return validateForm()" onsubmit="Display()" method="post">
+            Phone Number: <input type="number" name="pnum"><br>  
+            Subjects Interested:<br>  
+            <input type="checkbox" id="Subject" name="Subject" value="check" required>
+            <label for="Subject1">Web Technologies </label><br>
+            <input type="checkbox" id="Subject" name="Subject" value="check">
+            <label for="Subject2"> Python</label><br>
+            <input type="checkbox" id="subject" name="subject" value="check">
+            <label for="Subject2"> Data Sciences</label><br><br>
+          
+
+            
+<input type="submit" value="Submit" >
+</form> <br>  <br>  
+  <button>Change user</button><br>  <br>  
+  <script src="scripts/main.js"></script>
+  </body>
+</html>
